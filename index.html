@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merry Christmas!</title>
+    <link rel="stylesheet" href="style.css">
+ <head>
+<body>
+    <script>
+        // Function to create snowflakes
+        function createSnowflakes() {
+          const snowflakeCount = 100; // Number of snowflakes
+          const snowContainer = document.body;
+    
+          for (let i = 0; i < snowflakeCount; i++) {
+            const snowflake = document.createElement("div");
+            snowflake.classList.add("snowflake");
+            
+            snowflake.style.fontSize = Math.random() * 10 + 10 + "px";
+            
+            // Random horizontal position
+            snowflake.style.left = Math.random() * window.innerWidth + "px";
+            
+            // Random delay to make the fall start at different times
+            snowflake.style.animationDelay = Math.random() * 5 + "s";
+    
+            // Random speed for the falling snowflakes
+            snowflake.style.animationDuration = Math.random() * 5 + 5 + "s";
+            
+            snowflake.innerHTML = "&#10052;"; // Snowflake symbol
+            snowContainer.appendChild(snowflake);
+          }
+        }
+
+        window.onload = createSnowflakes;
+      </script>
+    <img src="chrimbo.png "Epic fucking christmas background" width="100%" height="100%">
+
+    <audio autoplay loop>
+        <source src="passionpit.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+</body> 
